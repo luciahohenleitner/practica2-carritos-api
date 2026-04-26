@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Tienda Online - Carrito</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header>
+    <h1>Tu carrito</h1>
+    <nav>
+      <a href="index.html">Inicio</a>
+      <a href="productos.html">Productos</a>
+      <a href="carrito.html">Carrito</a>
+      <a href="contacto.html">Contacto</a>
+    </nav>
+  </header>
+
+  <main>
+    <section>
+      <h2>Resumen de compra</h2>
+      <p>Estos son los productos seleccionados.</p>
+      <p id="estado-carrito">Sin actualizar</p>
+
+      <button id="boton-actualizar" type="button">Actualizar carrito</button>
+
+      <table>
+        <thead>
+          <tr>
+            <th>Producto</th>
+            <th>Cantidad</th>
+            <th>Precio</th>
+            <th>Acción</th>
+          </tr>
+        </thead>
+        <tbody id="cuerpo-carrito">
+        </tbody>
+      </table>
+
+      <p><strong>Subtotal:</strong> <span id="subtotal">0.00 €</span></p>
+      <p><strong>Envío:</strong> <span id="envio">0.00 €</span></p>
+      <p><strong>Total:</strong> <span id="total">0.00 €</span></p>
+    </section>
+  </main>
+
+  <footer>
+    <p>© 2026 Tienda Online</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
